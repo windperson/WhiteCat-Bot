@@ -13,6 +13,7 @@ using WhiteCatLib.Response;
 using Titanium.Web.Proxy.EventArguments;
 
 using Newtonsoft.Json;
+using WhiteCatLib.Request;
 
 namespace WhiteCatLogger
 {
@@ -109,11 +110,12 @@ namespace WhiteCatLogger
                         case "quest/complete":
                             QuestComplete response = WhiteCat.Parse<QuestComplete>(decryptedData);
 
-                            response.gold *= 3;
+                            response.gold *= 5;
+                            response.soul *= 10;
 
                             int count = response.itemIds.Count;
 
-                            for (var i = 0; i < count * 2; i++)
+                            for (var i = 0; i < count * 6; i++)
                             {
                                 response.itemIds.Add(response.itemIds[i]);
                             }

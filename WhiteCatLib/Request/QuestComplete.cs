@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using WhiteCatLib.Response.Object;
 
-namespace WhiteCatLib
+namespace WhiteCatLib.Request
 {
     public class QuestComplete
     {
