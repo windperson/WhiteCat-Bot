@@ -50,7 +50,7 @@
   <ItemGroup>
     <Compile Include="Cipher.cs" />
     <Compile Include="CryptoDectect.cs" />
-    <Compile Include="QuestComplete.cs" />
+    <Compile Include="Request\QuestComplete.cs" />
     <Compile Include="Response\AssetbundleVersion.cs" />
     <Compile Include="Response\Object\AddParameter.cs" />
     <Compile Include="Response\Object\AssetVersion.cs" />
